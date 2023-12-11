@@ -1,0 +1,245 @@
+{
+  VALID_INPUTS: [
+    1,       2,       3,
+    4,       5,       6,
+    7,       8,       9,
+    'one',   'two',   'three',
+    'four',  'five',  'six',
+    'seven', 'eight', 'nine'
+  ]
+}
+[ '', 'one', index: 7, input: 'qzjggk1one', groups: undefined ] match
+[
+  { pos: 7, value: 'one', input: 'qzjggk1one' },
+  { pos: 10, value: 'one', input: 'qzjggk1one' }
+] sortedMatches
+{ pos: 7, value: 'one', input: 'qzjggk1one' } firstElement
+smallest: 1
+largest: 1
+stringSum: 11
+11 sum
+new total: 11
+[ '', 'two', index: 0, input: 'two2seven7', groups: undefined ] match
+[ '', 'seven', index: 4, input: 'two2seven7', groups: undefined ] match
+[
+  { pos: 0, value: 'two', input: 'two2seven7' },
+  { pos: 3, value: 'two', input: 'two2seven7' },
+  { pos: 4, value: 'seven', input: 'two2seven7' },
+  { pos: 9, value: 'seven', input: 'two2seven7' }
+] sortedMatches
+{ pos: 0, value: 'two', input: 'two2seven7' } firstElement
+smallest: 2
+largest: 7
+stringSum: 27
+27 sum
+new total: 38
+[
+  '',
+  'three',
+  index: 3,
+  input: 'vszthreetwo6threethree4two3',
+  groups: undefined
+] match
+[
+  '',
+  'two',
+  index: 8,
+  input: 'vszthreetwo6threethree4two3',
+  groups: undefined
+] match
+[
+  '',
+  'three',
+  index: 12,
+  input: 'vszthreetwo6threethree4two3',
+  groups: undefined
+] match
+[
+  '',
+  'three',
+  index: 17,
+  input: 'vszthreetwo6threethree4two3',
+  groups: undefined
+] match
+[
+  '',
+  'two',
+  index: 23,
+  input: 'vszthreetwo6threethree4two3',
+  groups: undefined
+] match
+[
+  { pos: 3, value: 'three', input: 'vszthreetwo6threethree4two3' },
+  { pos: 8, value: 'three', input: 'vszthreetwo6threethree4two3' },
+  { pos: 8, value: 'two', input: 'vszthreetwo6threethree4two3' },
+  { pos: 11, value: 'two', input: 'vszthreetwo6threethree4two3' },
+  { pos: 12, value: 'three', input: 'vszthreetwo6threethree4two3' },
+  { pos: 17, value: 'three', input: 'vszthreetwo6threethree4two3' },
+  { pos: 17, value: 'three', input: 'vszthreetwo6threethree4two3' },
+  { pos: 22, value: 'three', input: 'vszthreetwo6threethree4two3' },
+  { pos: 23, value: 'two', input: 'vszthreetwo6threethree4two3' },
+  { pos: 26, value: 'two', input: 'vszthreetwo6threethree4two3' }
+] sortedMatches
+{ pos: 3, value: 'three', input: 'vszthreetwo6threethree4two3' } firstElement
+smallest: 3
+largest: 2
+stringSum: 32
+32 sum
+new total: 70
+[
+  '',
+  'five',
+  index: 10,
+  input: 'zcsvvlslqvfive11chhzmdjdgz8vbgldl',
+  groups: undefined
+] match
+[
+  {
+    pos: 10,
+    value: 'five',
+    input: 'zcsvvlslqvfive11chhzmdjdgz8vbgldl'
+  },
+  {
+    pos: 14,
+    value: 'five',
+    input: 'zcsvvlslqvfive11chhzmdjdgz8vbgldl'
+  }
+] sortedMatches
+{ pos: 10, value: 'five', input: 'zcsvvlslqvfive11chhzmdjdgz8vbgldl' } firstElement
+smallest: 5
+largest: 5
+stringSum: 55
+55 sum
+new total: 125
+[
+  '',
+  'seven',
+  index: 17,
+  input: 'jjsmsksvbr77cfdrdseven1zd',
+  groups: undefined
+] match
+[
+  { pos: 17, value: 'seven', input: 'jjsmsksvbr77cfdrdseven1zd' },
+  { pos: 22, value: 'seven', input: 'jjsmsksvbr77cfdrdseven1zd' }
+] sortedMatches
+{ pos: 17, value: 'seven', input: 'jjsmsksvbr77cfdrdseven1zd' } firstElement
+smallest: 7
+largest: 7
+stringSum: 77
+77 sum
+new total: 202
+[
+  '',
+  'seven',
+  index: 12,
+  input: '947lkkgznlhxseventwo',
+  groups: undefined
+] match
+[
+  '',
+  'two',
+  index: 17,
+  input: '947lkkgznlhxseventwo',
+  groups: undefined
+] match
+[
+  { pos: 12, value: 'seven', input: '947lkkgznlhxseventwo' },
+  { pos: 17, value: 'seven', input: '947lkkgznlhxseventwo' },
+  { pos: 17, value: 'two', input: '947lkkgznlhxseventwo' },
+  { pos: 20, value: 'two', input: '947lkkgznlhxseventwo' }
+] sortedMatches
+{ pos: 12, value: 'seven', input: '947lkkgznlhxseventwo' } firstElement
+smallest: 7
+largest: 2
+stringSum: 72
+72 sum
+new total: 274
+[ '', 'two', index: 1, input: '8twohprsxmz47', groups: undefined ] match
+[
+  { pos: 1, value: 'two', input: '8twohprsxmz47' },
+  { pos: 4, value: 'two', input: '8twohprsxmz47' }
+] sortedMatches
+{ pos: 1, value: 'two', input: '8twohprsxmz47' } firstElement
+smallest: 2
+largest: 2
+stringSum: 22
+22 sum
+new total: 296
+[ '', 'five', index: 0, input: 'five11eight1', groups: undefined ] match
+[ '', 'eight', index: 6, input: 'five11eight1', groups: undefined ] match
+[
+  { pos: 0, value: 'five', input: 'five11eight1' },
+  { pos: 4, value: 'five', input: 'five11eight1' },
+  { pos: 6, value: 'eight', input: 'five11eight1' },
+  { pos: 11, value: 'eight', input: 'five11eight1' }
+] sortedMatches
+{ pos: 0, value: 'five', input: 'five11eight1' } firstElement
+smallest: 5
+largest: 8
+stringSum: 58
+58 sum
+new total: 354
+[
+  '',
+  'seven',
+  index: 0,
+  input: 'seventhree1eightztszfourfivesix',
+  groups: undefined
+] match
+[
+  '',
+  'three',
+  index: 5,
+  input: 'seventhree1eightztszfourfivesix',
+  groups: undefined
+] match
+[
+  '',
+  'eight',
+  index: 11,
+  input: 'seventhree1eightztszfourfivesix',
+  groups: undefined
+] match
+[
+  '',
+  'four',
+  index: 20,
+  input: 'seventhree1eightztszfourfivesix',
+  groups: undefined
+] match
+[
+  '',
+  'five',
+  index: 24,
+  input: 'seventhree1eightztszfourfivesix',
+  groups: undefined
+] match
+[
+  '',
+  'six',
+  index: 28,
+  input: 'seventhree1eightztszfourfivesix',
+  groups: undefined
+] match
+[
+  { pos: 0, value: 'seven', input: 'seventhree1eightztszfourfivesix' },
+  { pos: 5, value: 'seven', input: 'seventhree1eightztszfourfivesix' },
+  { pos: 5, value: 'three', input: 'seventhree1eightztszfourfivesix' },
+  { pos: 10, value: 'three', input: 'seventhree1eightztszfourfivesix' },
+  { pos: 11, value: 'eight', input: 'seventhree1eightztszfourfivesix' },
+  { pos: 16, value: 'eight', input: 'seventhree1eightztszfourfivesix' },
+  { pos: 20, value: 'four', input: 'seventhree1eightztszfourfivesix' },
+  { pos: 24, value: 'four', input: 'seventhree1eightztszfourfivesix' },
+  { pos: 24, value: 'five', input: 'seventhree1eightztszfourfivesix' },
+  { pos: 28, value: 'five', input: 'seventhree1eightztszfourfivesix' },
+  { pos: 28, value: 'six', input: 'seventhree1eightztszfourfivesix' },
+  { pos: 31, value: 'six', input: 'seventhree1eightztszfourfivesix' }
+] sortedMatches
+{ pos: 0, value: 'seven', input: 'seventhree1eightztszfourfivesix' } firstElement
+smallest: 7
+largest: 6
+stringSum: 76
+76 sum
+new total: 430
+[] sortedMatches
+undefined firstElement
