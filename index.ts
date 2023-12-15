@@ -2,22 +2,38 @@ import { readFile } from 'node:fs/promises'
 
 const structureTotals = (tries: string) => {
 	const splitTries = tries.split(";");
-	const stuff = splitTries.map((aTry) => {
-		return aTry.split(",").map((almost) => {
+	const record: Record<string, number> = {};
+
+	splitTries.forEach((aTry) => {
+		aTry.split(",").forEach((almost) => {
 			const lastSplit = almost.split(" ");
 			const num = +(lastSplit.at(1) || 0);
 			const type = lastSplit.pop() || "";
+			if (!record[type]) {
+				record[type] = num;
+				return;
+			}
 
-			return { [type]: num };
+			record[type] += num;
 		})
 	});
-
-	return stuff;
+	console.log(record, "record")
+	// console.log(stuff, "stuff")
+	return record;
 }
 
-const calculateTotals = (totals: Record<string, number>[][] | Record<string, number>[]) => {
+const calculateTotals = (totals: Record<string, number>[][]) => {
+	let record: Record<string, number> = {};
+
 	totals.forEach(total => {
-		console.log({ total })
+		console.log(Object.values(totals), "totals keys")
+	})
+}
+
+const calculateTotal = (total: Record<string, number>[]) => {
+	let calc = {};
+	total.forEach((total) => {
+		console.log(Object.keys(total), "keys")
 	})
 }
 
@@ -30,7 +46,8 @@ async function main() {
 		const tries = splitGame.pop() || "";
 
 		const structuredTotals = structureTotals(tries);
-		const realTotals = calculateTotals(structuredTotals);
+		// console.log(structuredTotals, "structuredTotals")
+		// const realTotals = calculateTotals(structuredTotals);
 		// console.log({ realTotals })
 		prev[key] = tries;
 
